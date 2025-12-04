@@ -3,25 +3,25 @@
 # API de Gerenciamento de Biblioteca
 
 Este projeto é uma **API REST** desenvolvida em **Java 17** com **Spring
-Boot**, utilizada para gerenciar livros de uma biblioteca.\
+Boot**, utilizada para gerenciar livros de uma biblioteca.
 A aplicação permite criar, listar, atualizar e excluir livros,
 utilizando **Spring Data JPA** e **H2 Database**.
 
 ## Funcionalidades
 
--   Cadastro de livros\
--   Listagem de todos os livros\
--   Busca de livro por ID\
--   Atualização de informações\
+-   Cadastro de livros
+-   Listagem de todos os livros
+-   Listagem do livro por título
+-   Atualização de informações por ID
 -   Exclusão de livros
 
 ## Tecnologias Utilizadas
 
--   Java 17\
--   Spring Boot 3\
--   Spring Web\
--   Spring Data JPA\
--   H2 Database\
+-   Java 17
+-   Spring Boot 3
+-   Spring Web
+-   Spring Data JPA
+-   H2 Database
 -   Lombok
 
 ## Estrutura do Projeto
@@ -56,37 +56,42 @@ utilizando **Spring Data JPA** e **H2 Database**.
 
 ``` json
 {
-		"id": 1,
-		"title": "Verity",
-		"author": "Coolen Houver",
-		"yearPublication": 2020,
-		"gender": "Romance",
+		"title": "Se não eu, quem vai fazer você feliz?",
+		"author": "Graziela Gonçalves",
+		"yearPublication": 2018,
+		"genre": "Biografia",
 		"quantity": 1
 }
 ```
 
-### Listar
+### Procurar por título
 
-    GET /book
+    GET /book?title={title}
 
-### Buscar por ID
+### Listar todos os livros
 
-    GET /book/{id}
-
+    GET /book/all
+	
 ### Atualizar
 
-    PUT /book/{id}
+    PUT /book?id={id}
+
+``` json
+{
+		"quantity": 24
+}
+```
 
 ### Excluir
 
-    DELETE /book/{id}
+    DELETE /book?title={title}
 
 ## Próximas Melhorias
 
--   Sistema de empréstimo\
--   Paginação\
--   DTOs\
--   Swagger\
+-   Sistema de empréstimo
+-   Paginação
+-   DTOs
+-   Swagger
 -   Deploy em nuvem
 
 # 🇺🇸 README -- English
@@ -94,25 +99,25 @@ utilizando **Spring Data JPA** e **H2 Database**.
 # Library Management API
 
 This project is a **REST API** built with **Java 17** and **Spring
-Boot** for managing library books.\
+Boot** for managing library books.
 It allows creating, listing, updating, and deleting books using **Spring
 Data JPA** and **H2 database**.
 
 ## Features
 
--   Add books\
--   List all books\
--   Find by ID\
--   Update details\
+-   Add books
+-   List all books
+-   Find by title
+-   Update
 -   Delete books
 
 ## Technologies
 
--   Java 17\
--   Spring Boot 3\
--   Spring Web\
--   Spring Data JPA\
--   H2 Database\
+-   Java 17
+-   Spring Boot 3
+-   Spring Web
+-   Spring Data JPA
+-   H2 Database
 -   Lombok
 
 ## Project Structure
@@ -147,35 +152,40 @@ Data JPA** and **H2 database**.
 
 ``` json
 {
-		"id": 1,
 		"title": "Verity",
-		"author": "Coolen Houver",
+		"author": "Colleen Hoover",
 		"yearPublication": 2020,
-		"gender": "Romance",
+		"genre": "Romance",
 		"quantity": 1
 }
 ```
 
-### List
+### Find by title
 
-    GET /book
+    GET /book?title={title}
 
-### Find by ID
+### List all books
 
-    GET /book/{id}
-
+    GET /book/all
+	
 ### Update
 
-    PUT /book/{id}
+    PUT /book?id={id}
+
+``` json
+{
+		"quantity": 24
+}
+```
 
 ### Delete
 
-    DELETE /book/{id}
+    DELETE /book?title={title}
 
 ## Future Improvements
 
--   Loan system\
--   Pagination\
--   DTOs\
--   Swagger\
+-   Loan system
+-   Pagination
+-   DTOs
+-   Swagger
 -   Cloud deployment
