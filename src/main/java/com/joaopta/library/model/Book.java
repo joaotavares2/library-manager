@@ -21,6 +21,6 @@ public class Book {
 
     private String author;
     private int yearPublication;
-    private String gender;
+    private String genre;
     private int quantity;
 }

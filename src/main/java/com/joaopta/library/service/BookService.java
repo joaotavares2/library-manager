@@ -39,7 +39,7 @@ public class BookService {
                 .title(book.getTitle() != null ? book.getTitle() : bookEntity.getTitle())
                 .author(book.getAuthor() != null ? book.getAuthor() : bookEntity.getAuthor())
                 .yearPublication(book.getYearPublication() >=0 ? book.getYearPublication() : bookEntity.getYearPublication())
-                .gender(book.getGender() != null ? book.getGender() : bookEntity.getGender())
+                .genre(book.getGenre() != null ? book.getGenre() : bookEntity.getGenre())
                 .quantity(book.getQuantity() >0 ? book.getQuantity() : bookEntity.getQuantity())
                 .id(bookEntity.getId())
                 .build();
