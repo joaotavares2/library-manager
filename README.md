@@ -38,11 +38,11 @@ utilizando **Spring Data JPA** e **H2 Database**.
 
         git clone https://github.com/joaotavares2/library-manager
 
-2.  Abra o projeto na IDE\
+2.  Abra o projeto na IDE
 
 3.  Execute:
 
-        mvn spring-boot:run
+        LibraryApplication.java
 
 4.  Acesse:
 
@@ -138,11 +138,11 @@ Data JPA** and **H2 database**.
 
         git clone https://github.com/joaotavares2/library-manager
 
-2.  Open the project in your IDE\
+2.  Open the project in your IDE
 
 3.  Run:
 
-        mvn spring-boot:run
+        LibraryApplication.java
 
 4.  Access:
 
