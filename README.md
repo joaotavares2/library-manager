@@ -94,6 +94,10 @@ utilizando **Spring Data JPA** e **H2 Database**.
 -   Swagger
 -   Deploy em nuvem
 
+
+---
+
+
 # 🇺🇸 README -- English
 
 # Library Management API
