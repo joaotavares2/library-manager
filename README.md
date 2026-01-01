@@ -36,7 +36,7 @@ utilizando **Spring Data JPA** e **H2 Database**.
 
 1.  Clone o repositório:
 
-        git clone <url-do-seu-repositorio>
+        git clone https://github.com/joaotavares2/library-manager
 
 2.  Abra o projeto na IDE\
 
@@ -132,7 +132,7 @@ Data JPA** and **H2 database**.
 
 1.  Clone the repository:
 
-        git clone <your-repository-url>
+        git clone https://github.com/joaotavares2/library-manager
 
 2.  Open the project in your IDE\
 
